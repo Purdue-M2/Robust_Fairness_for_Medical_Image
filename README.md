@@ -2,7 +2,7 @@
 # Robust Fairness Vision-Language Learning for Medical Image Analysis
 <!-- > [**CVPR 2024**] [**FairCLIP: Harnessing Fairness in Vision-Language Learning**](https://openaccess.thecvf.com/content/CVPR2024/papers/Luo_FairCLIP_Harnessing_Fairness_in_Vision-Language_Learning_CVPR_2024_paper.pdf) -->
 >
-> by Sparsh Bansal*, Mingyang Wu*, Xin Wang*, Shu Hu
+> by Sparsh Bansal*, Mingyang Wu*, Xin Wang*, Shu Hu*
 >
 
 
@@ -79,7 +79,7 @@ NOTE: OPENAI_KEY is only needed for GPT-4.
 
 ## Pre-training
 
-### CLIP/FairCLIP
+### RobustFairCLIP
 The code for pre-training **CLIP**, **FairCLIP**, and **RobustFairCLIP** is in the folder [FairCLIP](./FairCLIP).
 
 ### RobustBLIP-2
@@ -92,7 +92,7 @@ python -m torch.distributed.run --nproc_per_node=1 --master_port=29501 train.py 
 
 ### Linear Probing
 ```bash
-cd FairCLIP/mae
+cd Robust_Fairness_For_Medical_Image/mae
 DATA_DIR=/Path/to/FairVLMed
 FEATS_TYPE=image # [image, multimodal]
 
