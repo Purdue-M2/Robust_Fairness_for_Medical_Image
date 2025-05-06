@@ -84,7 +84,7 @@ The code for pre-training **CLIP**, **FairCLIP**, and **RobustFairCLIP** is in t
 
 ### RobustBLIP-2
 ```bash
-cd FairCLIP/LAVIS
+cd Robust_Fairness_For_Medical_Image/LAVIS
 python -m torch.distributed.run --nproc_per_node=1 --master_port=29501 train.py --cfg-path lavis/projects/blip2/train/pretrain_stage1.yaml
 ```
 
