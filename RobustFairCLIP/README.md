@@ -1,4 +1,4 @@
-# FairCLIP
+# RobustFairCLIP
 
 This repository provides the code and the dataset for the paper entitled *Robust Fairness Vision-Language Learning for Medical Image Analysis*. 
 
