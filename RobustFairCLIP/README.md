@@ -1,10 +1,10 @@
 # FairCLIP
 
-This repository provides the code and the dataset for the paper entitled *FairCLIP: Harnessing Fairness in Vision-Language Learning*. 
+This repository provides the code and the dataset for the paper entitled *Robust Fairness Vision-Language Learning for Medical Image Analysis*. 
 
 ## Dataset
 
-The FairVLMed dataset can be accessed via this [link](https://drive.google.com/drive/folders/1bkeifigwOAfnsLvup9mJOSNeA3WsvA2l?usp=sharing). This dataset can only be used for non-commercial research purposes. At no time, the dataset shall be used for clinical decisions or patient care. The data use license is [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+The FairVLMed dataset from [FairCLIP](https://arxiv.org/pdf/2403.19949) can be accessed via this [link](https://drive.google.com/drive/folders/1bkeifigwOAfnsLvup9mJOSNeA3WsvA2l?usp=sharing). This dataset can only be used for non-commercial research purposes. At no time, the dataset shall be used for clinical decisions or patient care. The data use license is [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
 
 The FairVLMed dataset comprises 10,000 samples from 10,000 subjects. It is divided into 7,000 training, 1,000 validation, and 2,000 test samples. Upon downloading and extracting these datasets, you will find the dataset structure as follows.
 
@@ -56,6 +56,12 @@ To run the experiments for zero-shot transfer with FairCLIP, execute:
 
 ```
 ./scripts/finetune_FairCLIP.sh
+```
+
+To run the experiments for zero-shot transfer with RobustFairCLIP, execute:
+
+```
+./scripts/finetune_RobustFairCLIP.sh
 ```
 
 To evaluate the models pre-trained in the above processes, execute:
